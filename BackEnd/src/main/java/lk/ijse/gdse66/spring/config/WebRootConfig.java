@@ -16,7 +16,6 @@ import javax.xml.transform.Transformer;
 
 @Configuration
 @ComponentScan(basePackages = {"lk.ijse.gdse66.spring.service","lk.ijse.gdse66.spring.repositories"} , basePackageClasses = Transformer.class)
-
 @EnableWebMvc
 @Import({JPAConfig.class})
 public class WebRootConfig {
