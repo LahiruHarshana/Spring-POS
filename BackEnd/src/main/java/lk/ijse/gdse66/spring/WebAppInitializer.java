@@ -7,4 +7,5 @@ package lk.ijse.gdse66.spring;
  * @created : 2024-03-30, Saturday
  **/
 public class WebAppInitializer {
+
 }
