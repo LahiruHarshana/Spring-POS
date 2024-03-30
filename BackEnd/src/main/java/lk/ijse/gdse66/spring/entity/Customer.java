@@ -1,10 +1,10 @@
-package lk.ijse.gdse66.spring.service;
+package lk.ijse.gdse66.spring.entity;
 
 /**
  * @author : L.H.J
- * @File: CustomerService
+ * @File: Customer
  * @mailto : lharshana2002@gmail.com
  * @created : 2024-03-30, Saturday
  **/
-public interface CustomerService {
+public class Customer {
 }
