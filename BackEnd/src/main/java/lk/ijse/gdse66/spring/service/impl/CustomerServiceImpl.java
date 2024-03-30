@@ -19,7 +19,7 @@ import java.util.List;
 public class CustomerServiceImpl implements CustomerService {
     @Override
     public void save(CustomerDTO customerDTO) {
-
+        System.out.println("Customer Save");
     }
 
     @Override
