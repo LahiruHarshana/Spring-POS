@@ -2,6 +2,7 @@ package lk.ijse.gdse66.spring.service.impl;
 
 import jakarta.transaction.Transactional;
 import lk.ijse.gdse66.spring.dto.CustomerDTO;
+import lk.ijse.gdse66.spring.entity.Customer;
 import lk.ijse.gdse66.spring.repositories.CustomerRepo;
 import lk.ijse.gdse66.spring.service.CustomerService;
 import lk.ijse.gdse66.spring.service.util.Transformer;
@@ -28,7 +29,7 @@ public class CustomerServiceImpl implements CustomerService {
     CustomerRepo customerRepo;
     @Override
     public void save(CustomerDTO customerDTO) {
-        System.out.println("Customer Save");
+        customerRepo.save(transformer.toEntity(CustomerDTO.class, Customer.class));
     }
 
     @Override
