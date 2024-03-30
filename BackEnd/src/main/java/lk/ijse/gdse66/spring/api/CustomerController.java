@@ -1,5 +1,7 @@
 package lk.ijse.gdse66.spring.api;
 
+import lk.ijse.gdse66.spring.service.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 public class CustomerController {
 
+    @Autowired
+    private CustomerService customerService;
     @PostMapping
     public void saveCustomer(){
 
