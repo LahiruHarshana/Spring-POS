@@ -19,6 +19,6 @@ public class CustomerController {
 
     @PostMapping
     public void saveCustomer(){
-        System.out.println("Customer Save");
+
     }
 }
