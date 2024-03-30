@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.spring.service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author : L.H.J
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 public interface CrudService<T> {
     void save(T t);
     void update(T t);
-    void delete(T t);
-    T search(T t);
-    ArrayList<T> getAll();
+    void delete(String id);
+    T search(String id);
+    List<T> getAll();
 }
