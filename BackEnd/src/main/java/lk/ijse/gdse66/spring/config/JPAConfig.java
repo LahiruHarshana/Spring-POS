@@ -30,7 +30,7 @@ public class JPAConfig {
         DriverManagerDataSource dmds = new DriverManagerDataSource();
         dmds.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dmds.setUsername("root");
-        dmds.setUrl("jdbc:mysql://localhost:3306/gdse66_spring_web?createDatabaseIfNotExist=true");
+        dmds.setUrl("jdbc:mysql://localhost:3306/Spring_POS?createDatabaseIfNotExist=true");
         dmds.setPassword("12345678");
         return dmds;
     }
@@ -41,7 +41,7 @@ public class JPAConfig {
         vendorAdapter.setGenerateDdl(true);
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("lk.ijse.spring.entity");
+        factory.setPackagesToScan("lk.ijse.gdse66.spring.entity");
         factory.setDataSource(dataSource());
         return factory;
     }
