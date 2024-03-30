@@ -2,7 +2,10 @@ package lk.ijse.gdse66.spring.service.impl;
 
 import jakarta.transaction.Transactional;
 import lk.ijse.gdse66.spring.dto.CustomerDTO;
+import lk.ijse.gdse66.spring.repositories.CustomerRepo;
 import lk.ijse.gdse66.spring.service.CustomerService;
+import lk.ijse.gdse66.spring.service.util.Transformer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +20,12 @@ import java.util.List;
 @Service
 @Transactional
 public class CustomerServiceImpl implements CustomerService {
+
+    @Autowired
+    Transformer transformer;
+
+    @Autowired
+    CustomerRepo customerRepo;
     @Override
     public void save(CustomerDTO customerDTO) {
         System.out.println("Customer Save");
